@@ -11,11 +11,14 @@ namespace AnimalLibrary {
 
         public GermanSheperd(string Name) : base(Name) {
             this.Longtail = true;
-            this.ExtremeSenseOfSmell = true;
         }
 
         public GermanSheperd() {
             this.Muzzle = MuzzleType.Long; 
+            this.Bark = BarkPitch.Low;
+        }
+        public override string GetTypeOfDog() {
+            return "German Shepherd";
         }
     }
 }
