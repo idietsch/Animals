@@ -9,6 +9,11 @@ namespace AnimalLibrary {
         public BarkPitch Bark { get; set; } //high, medium, low
         public MuzzleType Muzzle { get; set; } //long, short, collapsed
         public bool ExtremeSenseOfSmell { get; set; } = false;  //Extreme, normal
+        public string Name { get; set; }
+
+        public Dog(string Name) {
+            this.Name = Name;
+        }
 
         public Dog() {
 
